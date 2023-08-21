@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid 2</title>
+    <style>
+.grid{border: solid black;width: 1333px;height: 660px;display: grid;
+grid-template-areas: "a a a"
+                     "first sec thr"   }
+   /* heading para button-read                   */
+h1,p{margin-left: 30px;}
+button{width: 150px;color: azure;background-color: black;margin-left: 70px;height: 25px;}  
+/* row-2          */
+.item1{grid-area: a;height: 30px;background-image: url(data:image/png;base64,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);background-repeat: no-repeat;background-size: contain;text-align: center;}
+.item2{grid-area: first; height: 630px;width: 600px;display: grid;justify-content: center;align-content: center;}
+.item3{grid-area: sec;width: 450px;background-image: url(https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6);background-repeat: no-repeat;background-size: cover;}
+.item4{grid-area: thr;width: 283px;background-color: yellow;}
+/* nav-bar */
+a{color: black;text-decoration: none;padding: 15px;}
+input{float: right;width: 150px;height: 30px;color: rgb(18, 19, 20);background-color: rgb(0, 255, 21);border: none;border-radius: 5px;margin: 1px;}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- nav -->
+        <div class="item1">
+<a href="#">home
+</a><a href="">about</a>
+<a href="">contact</a>
+<input type="button" value="login">
+    </div>
+    <!-- row-2 -->
+        <div class="item2">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, modi magnam. Pariatur debitis modi sapiente eos ducimus asperiores nesciunt sequi ratione. Reiciendis, et. Dignissimos dolore consequatur labore tempora impedit voluptatum, architecto, quisquam delectus quasi provident, modi sapiente velit consectetur nam facere itaque enim qui. Omnis veniam adipisci commodi illum. Hic dignissimos provident repellat assumenda maiores vitae nam temporibus animi? Dolores, in veritatis ducimus earum  accusantium!</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="item3">
+        </div>
+        <div class="item4"></div>
+    </div>
+</body>
+</html>
