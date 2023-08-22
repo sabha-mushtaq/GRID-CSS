@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css 4</title>
+    <style>
+/* namimg divs */
+.item1{grid-area: top;}
+.item2{grid-area: first;}
+.item3{grid-area: sec;}
+.item4{grid-area: thr;}
+/* apllying grid */
+.grid{display: grid;height: 550;width: 1333px;
+
+grid-template-areas: "top top top"
+                     "first sec thr"  ;
+}
+/* styling individual divs */
+.item1{height: 350px;width: 1333px;background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*1ZV9Z3u9UU5c-x0ojqfcxQ.png);background-repeat: no-repeat;background-size: cover;}
+.item2{height: 250px;width: 402px;margin-top: 30px;border: solid 1px;border-radius: 20px;}
+.item3{height: 250px;width: 402px;margin-top: 30px;border: solid 1px;border-radius: 20px;}
+.item4{height: 250px;width: 402px;margin-top: 30px;border: solid 1px;border-radius: 20px;}
+/* styling sub divs inside div */
+.sub{width: 99%;height: 150px;border: solid 0.11px;border-radius: 10px;margin-left: 1px;}
+#q{background-image: url(https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886);background-repeat: no-repeat;background-size: cover;}
+#w{background-image: url(https://assets.cntraveller.in/photos/61fa89415dabee8b6de788ed/16:9/w_1920,h_1080,c_limit/valentines%20day%20restaurants%20mumbai%20lead.jpg);background-repeat: no-repeat;background-size: cover;}
+#e{background-image: url(https://www.cuddlynest.com/blog/wp-content/uploads/2022/08/night-clubs-in-hong-kong-scaled.jpg);background-repeat: no-repeat;background-size: cover;}
+
+/* styling text */
+ h1{text-align: center;margin-top: 150px;}
+h3{text-align: center;color: gray;}
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div class="item1"></div>
+    <div class="item2"><div class="sub" id="q">
+        <h1>order online</h1>
+        <h3>Stay home and order at your door step</h3>
+    </div></div>
+    <div class="item3"><div class="sub" id="w">
+        <h1>on-site Dining</h1>
+    <h3>View the city's favourite dining venue</h3>
+    </div></div>
+    <div class="item4"><div class="sub" id="e">
+<h1>Night life and Clubs</h1>
+<h3>Explore city's top night life outlets and book tables</h3>
+    </div></div>
+</div>
+</body>
+</html>
