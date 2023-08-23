@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css 5</title>
+<style>
+/* apply grid */
+.grid{display: grid;grid-template-areas: "first sec th"
+                                          "footer footer footer"               ;grid-row-gap: 15px;}
+/* naming grid divs and styling them*/
+.item1{grid-area:first ;background-image: url(https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886);background-repeat: no-repeat;background-size: 350px 150px;}
+.item2{grid-area:sec ;background-image: url(https://assets.cntraveller.in/photos/61fa89415dabee8b6de788ed/16:9/w_1920,h_1080,c_limit/valentines%20day%20restaurants%20mumbai%20lead.jpg);background-repeat: no-repeat;background-size: 350px 150px;}
+.item3{grid-area:th ;background-image: url(https://www.cuddlynest.com/blog/wp-content/uploads/2022/08/night-clubs-in-hong-kong-scaled.jpg);background-repeat: no-repeat;background-size: 350px 150px;}
+
+.item4{grid-area:footer ;}
+/* applying properties on individual divs */
+.item1{height: 250px;width: 350px;border: solid 1px;border-radius: 30px;}
+.item2{height: 250px;width: 350px;border: solid 1px;border-radius: 30px;}
+.item3{height: 250px;width: 350px;border: solid 1px;border-radius: 30px;}
+.item4{height: 360px;width: 1330px;border: solid 1px;}
+h1{text-align: center;margin-top: 150px;}
+p{text-align: center;color: gray;}
+/* styling footer */
+.item4{display: flex;flex-direction: row;justify-content: space-around;flex-wrap: wrap;background-color: rgb(128, 60, 12);}
+.sub1{grid-area:a ;height: 300px;width: 450px;margin-left: 100px;background-image: url(https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png);background-repeat: no-repeat;background-size: contain;background-color: rgb(128, 60, 12);}
+.sub2{grid-area:b ;height: 300px;width: 250px;}
+.sub3{grid-area: c;height: 300px;width: 250px;}
+.sub4{grid-area:d ;height: 55px;width: 300px;}
+li{list-style: none;padding: 20px;}
+a{text-decoration: none;color:chocolate;}
+.v{color: beige;margin-top: -0.25px;font-size: larger;}
+a:hover{color: antiquewhite;font-size: xx-large;}
+</style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item1"><h1>order online</h1>
+          <p>Stay home and order at your door step</p>    </div>
+        <div class="item2">
+<h1>on-site Dining</h1>
+<p>View the city's favourite dining venue</p>
+        </div>
+        <div class="item3">
+<h1>Night life and Clubs</h1>
+<p>Explore city's top night life outlets and book tables</p>
+        </div>
+        <div class="item4">
+<div class="sub1"></div>
+<div class="sub2">
+<h1 class="v">NAVIGATION LINKS</h1>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Login</a></li>
+</ul>
+</div>
+<div class="sub3" >
+<h1 class="v">Learn more</h1>
+<ul>
+    <li><a href="#">privacy</a> </li>
+    <li> <a href="#">Security</a>   </li>
+    <li> <a href="#">Terms</a> </li>
+    <li><a href="#"> 
+        Sitemap</a>  </li>
+</ul>
+</div>
+<div class="sub4"><P>&copy; COPYRIGHT ALL RIGHTS RESERVED</P></div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
