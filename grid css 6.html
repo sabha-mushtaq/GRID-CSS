@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css 6</title>
+<style>
+    /* stying main divs */
+.grid{width: 1333px;height: 650px;border: solid black;}
+.con{width: 1230px;height: 500px;border: solid black;margin: 70px;}
+.in{width: 1200px;height: 440px;margin: 5px;}
+/* stying table */
+.in{display: grid;grid-template: repeat(7,1fr)/repeat(8,1fr);}
+#a{border: dashed  1px;padding: 2px;}
+.item1{height: 80px;}
+.item14{grid-row-start:span 5;background-color: yellow;}
+.item15,.item29,.item35,.item38{grid-column-start: span 2;background-color: aqua;}
+.item17{grid-column-start: span 2;background-color: aqua;}
+.item27{grid-column-start: span 2;background-color: aqua;}
+h1{text-align: center;}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{background-color: chartreuse;}
+.item9,.item16,.item22,.item28,.item34{background-color: chocolate;}
+.item12,.item13,.item36,.item18,.item19,.item25,.item26,.item30,.item31,.item37{background-color: cadetblue;}
+.item10,.item11,.item21,.item20,.item23,.item24,.item32,.item33{background-color: coral;}
+.item14{writing-mode: vertical-rl;
+
+text-orientation: upright;text-align: start;}
+#o{margin-right: 70px;letter-spacing: 5px;}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+   <div class="grid">
+    <div class="con">
+        <h1>SCHOOL TIME TABLE</h1>
+        <div class="in">
+        <div class="item1" id="a"> <h3>TIME</h3> </div>
+        <div class="item2" id="a"> <p>08:00 AM- 09:00 AM</p></div>
+        <div class="item3" id="a"><p>09:00 AM- 10:00 AM</p></div>
+        <div class="item4" id="a"><p>10:00 AM- 11:00 AM</p></div>
+        <div class="item5" id="a"><p>11:00 AM- 12:00 PM</p></div>
+        <div class="item6" id="a"><p>12:00 PM- 02:00 PM</p></div>
+        <div class="item7" id="a"><p>02:00 PM- 03:00 PM</p></div>
+        <div class="item8" id="a"><p>03:00 PM-04:00 PM</p></div>
+        <div class="item9" id="a"><h3>Monday</h3></div>
+        <div class="item10" id="a"><h3>English</h3></div>
+        <div class="item11" id="a"><h3>Biology</h3></div>
+        <div class="item12" id="a"><h3>Physics</h3></div>
+        <div class="item13" id="a"><h3>Chemistry</h3></div>
+        <div class="item14" id="a"><h3 id="o">LUNCH break</h3></div>
+        <div class="item15" id="a" ><h3>Chemistry LAB</h3></div>
+        <div class="item16" id="a"><h3>Tuesday</h3></div>
+        <div class="item17" id="a"><h3>Biology LAB</h3></div>
+        <div class="item18" id="a"><h3>Physics</h3></div>
+        <div class="item19" id="a"><h3>Chemistry</h3></div>
+        <div class="item20" id="a"><h3>English</h3></div>
+        <div class="item21" id="a"><h3>Biology</h3></div>
+        <div class="item22" id="a"><h3>Wednesday</h3></div>
+        <div class="item23" id="a"><h3>English</h3></div>
+        <div class="item24" id="a"><h3>Biology</h3></div>
+        <div class="item25" id="a"><h3>Physics</h3></div>
+        <div class="item26" id="a"><h3>Chemistry</h3></div>
+        <div class="item27" id="a"><h3>GAMES</h3></div>
+        <div class="item28" id="a"><h3>THURSDAY</h3></div>
+        <div class="item29" id="a"><h3>Biology LAB</h3></div>
+        <div class="item30" id="a"><h3>PHYSICS</h3></div>
+        <div class="item31" id="a"><h3>Chemistry</h3></div>
+        <div class="item32" id="a"><h3>English</h3></div>
+        <div class="item33" id="a"><h3>Biology</h3></div>
+        <div class="item34" id="a"><h3>Saturday</h3></div>
+        <div class="item35" id="a"><h3>Biology LAB </h3>   </div>
+        <div class="item36" id="a"><h3>PHYSICS     </h3>  </div>
+        <div class="item37" id="a"><h3>CHEMISTRY   </h3>     </div>
+        <div class="item38" id="a"><h3>LET'S OFF</h3></div>
+       
+    </div>
+    </div>
+   </div> 
+</body>
+</html>
