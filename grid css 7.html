@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css 7</title>
+<style>
+/* styling main div */
+  .con{width: 1333px;height: 550px;display: grid;grid-template: repeat(3,1fr)/repeat(3,1fr);grid-gap: 20px 20px;}
+/* styling individual divs */
+#a{border-radius: 5px;}
+.item5,.item4,.item2{grid-row-start: 2 span;}
+.item1{background-image: url(https://wallpaperaccess.com/full/393735.jpg);background-repeat: no-repeat;background-size: cover;}
+.item2{background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);background-repeat: no-repeat;background-size: cover;}
+.item3{background-image: url(https://media.istockphoto.com/id/944812540/photo/mountain-landscape-ponta-delgada-island-azores.jpg?s=612x612&w=0&k=20&c=mbS8X4gtJki3gGDjfC0sG3rsz7D0nls53a0b4OPXLnE=);background-repeat: no-repeat;background-size: cover;}
+.item4{background-image: url(https://cdn.wallpapersafari.com/67/10/ZKOFVa.jpg);background-repeat: no-repeat;background-size: cover;}
+.item5{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ffazThF0rWKYt3cvWRznFJvOO44CixA5Ng&usqp=CAU);background-repeat: no-repeat;background-size: cover;}
+.item6{background-image: url(https://images.pling.com/img/00/00/63/03/06/1840947/beautiful-nature-area-with-green-grass-and-spring-flowers-mountain-horizon-with-mountains-and-sky-with-dark-clouds-landscape-from-slovenia-1920x1080.jpg);background-repeat: no-repeat;background-size: cover;}
+
+</style>
+
+
+</head>
+<body>
+    <div class="con">
+        <div class="item1" id="a"></div>
+        <div class="item2" id="a"></div>
+        <div class="item3" id="a"></div>
+        <div class="item4"  id="a"></div>
+        <div class="item5"  id="a"></div>
+        <div class="item6"  id="a"></div>
+
+
+
+    </div>
+</body>
+</html>
